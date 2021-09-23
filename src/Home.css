@@ -1,0 +1,52 @@
+.loginBtn{
+  position: absolute;
+  right: 30px;
+  top: 6px;
+}
+.events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.events .ant-badge-status {
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.notes-month {
+  font-size: 28px;
+  text-align: center;
+}
+.notes-month section {
+  font-size: 28px;
+}
+.dynamic-delete-button {
+  position: relative;
+  top: 4px;
+  margin: 0 8px;
+  color: #999;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.dynamic-delete-button:hover {
+  color: #777;
+}
+.dynamic-delete-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.addInput{
+  width: 50%;
+  margin: 20px auto;
+}
+.addInput .mt{
+  margin-left: 10px;
+}
+.ant-space-item:nth-child(2){
+  flex: 1;
+  position: relative;
+  top: 5px;
+}

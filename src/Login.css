@@ -1,0 +1,101 @@
+.container-body {
+  height: 100vh;
+  background-image: url('background.svg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective:1000px;
+}
+.container-body .login-body {
+  width: 75%;
+  min-width: 940px;
+  height: 70%;
+  min-height: 500px;
+  background: #fff;
+  display: flex;
+  border-radius: 12px;
+}
+.container-body .login-body.rotate{
+  animation: rotate 1s linear infinite;
+  position: absolute;
+  top: 15%;
+}
+.container-body .login-body .login-left {
+  flex: 1;
+  height: 100%;
+  background: -webkit-linear-gradient(to left, #2ebf91, #8360c3);
+  background: linear-gradient(to left, #2ebf91, #8360c3);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-body .login-body .login-left div {
+  text-align: center;
+}
+.container-body .login-body .login-left div .tesla {
+  width: 70%;
+  padding-bottom: 20px;
+  animation: identifier 2s infinite linear normal;
+}
+.container-body .login-body .login-right {
+  flex: 1;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.container-body .login-body .login-right .ant-form-item-required {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container-body .login-body .login-right .login-title {
+  text-align: center;
+  padding: 20px;
+}
+.container-body .login-body .login-right .login-form-button {
+  padding: 8px 0;
+  box-sizing: content-box;
+  font-size: 20px ;
+  font-weight: 600;
+  border-radius: 25px;
+}
+.textCenter{
+  text-align: center;
+  padding: 15px;
+}
+
+@keyframes identifier {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-180deg);
+  }
+}
+@keyframes rotate {
+  0%{
+    transform: rotateX(0deg);
+  }
+  25% {
+    transform: rotateX(12deg) scale(0.9);
+     top: 0%;
+
+  }
+  50% {
+    transform: rotateX(25deg) scale(0.7);
+    top: -25%;
+
+  }
+  75% {
+    transform: rotateX(35deg) scale(0.5);
+    top: -50%;
+
+  }
+  100% {
+    transform: rotateX(45deg) scale(0.3);
+    top: -75%;
+
+  }
+}
